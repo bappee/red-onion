@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 import breakfast from '../../FoodsData/breakfast';
+import Nastalist from '../NastaList/Nastalist';
 
 const Nasta = () => {
 
@@ -8,11 +9,14 @@ const Nasta = () => {
     const [products,setProducts]= useState(breakData)
     return (
         <div>
-           <ul>
+           
                {
-                   products.map(pd=> <li>{pd}</li>)
+                   products.map(nasta=> <Nastalist product={nasta}></Nastalist>)
                }
-               </ul> 
+              
+               <div>
+                   
+               </div>
         </div>
     );
 };
