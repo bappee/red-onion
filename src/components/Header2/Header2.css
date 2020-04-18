@@ -1,0 +1,21 @@
+.header-des{
+    text-align: center;
+    margin-top: 50px;
+    text-decoration: none;
+    
+}
+
+.header-des nav{
+   
+    text-align: center;
+    text-decoration: none;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    padding:5px ;
+    margin-right: 50px
+    
+}
+
