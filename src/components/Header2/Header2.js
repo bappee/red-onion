@@ -5,9 +5,9 @@ const Header2 = () => {
     return (
         <div>
             <nav className="header-des">
-                <a href="#breakfast">Breakfast</a>
-                <a href="#lunch">Lunch</a>
-                <a href="#dinner">Dinner</a>
+                <a href="breakfast">Breakfast</a>
+                <a href="lunch">Lunch</a>
+                <a href="dinner">Dinner</a>
             </nav>
         </div>
     );

@@ -1,5 +1,6 @@
 import React from 'react';
 import './NastaList.css'
+import { Link } from 'react-router-dom';
 
 const Nastalist = (props) => {
 
@@ -17,9 +18,7 @@ const Nastalist = (props) => {
                <h6>{name}</h6>
                <p><span>{caption}</span></p>
                <h5>${price}</h5>
-               <button  className="btn-danger"
-               onClick={()=>props.handleDetailsBtn(props.product)}
-               >View Details</button>
+          <h4><Link to={"/product/"+name}>Order Now</Link> </h4>
             </div>
       
 
