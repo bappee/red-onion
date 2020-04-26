@@ -2,13 +2,15 @@ import React, { useState } from 'react';
 
 import breakfast from '../../FoodsData/breakfast';
 import Nastalist from '../NastaList/Nastalist';
-import { prettyDOM } from '@testing-library/react';
+import FoodDetails from '../foodDetails/FoodDetails';
+
 
 
 const Nasta = () => {
 
     const breakData=breakfast.slice(0,6);
     const [products,setProducts]= useState(breakData)
+    
   
 
 
@@ -18,7 +20,7 @@ const Nasta = () => {
            
                {
                    products.map(nasta=> <Nastalist
-            
+                    
                      product={nasta}
                     ></Nastalist>)
                }
@@ -26,7 +28,7 @@ const Nasta = () => {
             </div>
             
             <div>
-                
+               
             </div>
 
         </div>
